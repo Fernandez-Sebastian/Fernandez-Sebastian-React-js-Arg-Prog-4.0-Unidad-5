@@ -8,7 +8,7 @@ function Cuerpo() {
           Juego facil de jugar donde podes incrementar o decrementar un contador.
         </Text>
         <Text as='p' fontFamily="cursive">
-          Cuidado, solo podras aumentar hasta 50 y decrementar hasta -50.
+          Cuidado!, solo podras aumentar hasta 15 y decrementar hasta -15.
         </Text>
     </Box>
   )

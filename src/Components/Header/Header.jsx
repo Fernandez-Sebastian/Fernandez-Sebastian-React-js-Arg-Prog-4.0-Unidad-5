@@ -1,5 +1,5 @@
-import { Box, Button, Drawer, DrawerBody, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, IconButton, Image, Input, InputGroup, InputLeftElement, Menu, MenuButton, MenuItem, MenuList, Stack, VStack, useColorMode, useDisclosure } from '@chakra-ui/react';
-import {FaSun, FaMoon, FaUser, FaCartArrowDown, FaChevronDown, FaSearch} from 'react-icons/fa'
+import { Box, Button, Drawer, DrawerBody, DrawerContent, DrawerFooter, DrawerOverlay, Flex, IconButton, Menu, MenuButton, MenuItem, MenuList, Stack, VStack, useColorMode, useDisclosure } from '@chakra-ui/react';
+import {FaSun, FaMoon, FaUser, FaChevronDown} from 'react-icons/fa'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {ImCross} from 'react-icons/im'
 import React from 'react';

@@ -28,14 +28,15 @@ function ContadorResponsive() {
   return (
     <>
         <ChakraProvider>
-            <Box paddingTop="20px"> 
+            <Box pt="20px"> 
                 <Text as='h1' id='contar' textAlign="center" fontFamily="cursive"> Contador: {contador}</Text>
                 <Box textAlign="center">
                     <Button 
                     colorScheme='cyan'
                     onClick={decrementar}isDisabled={
-                        contador==(-50)?"isDisabled":""
+                        contador==(-15)?"isDisabled":""
                     }
+                    m="5px"
                     >Decrementar
                     </Button>
                     <Button 
@@ -43,11 +44,13 @@ function ContadorResponsive() {
                     onClick={resetear}isDisabled={
                         contador==(0)?"isDisabled":""
                     }
+                    m="5px"
                     >Resetear
                     </Button>
                     <Button 
                     colorScheme='whatsapp' 
-                    onClick={incrementar} isDisabled={contador==50?"isDisabled":""} margin="5px"
+                    onClick={incrementar} isDisabled={contador==15?"isDisabled":""} 
+                    m="5px"
                     >Incrementar
                     </Button>
                 </Box>   
