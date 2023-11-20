@@ -11,27 +11,19 @@ const Header = () => {
     return(
         <VStack>
             <Box w="100%" display={{sm:"none", md:"block"}} position="fixed" zIndex="99">
-                <Flex w="100%" alignItems="Center" justifyContent="space-between" bg="#623BE2" color="white" h="60px"   p="5">
+                <Flex w="100%" alignItems="Center" justifyContent="space-between" bg="#83c8f2" color="white" h="60px"   p="5">
                     <Flex>
                         <Menu>
-                            <MenuButton as={Button} rightIcon={<FaChevronDown />} color="white" bg="#623BE2" _hover={{  bg:"#623BE2" }} _active={{ bg:"#623BE2" }}>Categorias</MenuButton>
-                            <MenuList bg="#623BE2">
-                                <MenuItem bg="#623BE2" _hover={{ bg:"#7B5BE7" }}>Sumar Numeros</MenuItem>
-                                <MenuItem bg="#623BE2" _hover={{ bg:"#7B5BE7" }}>Apilar Numeros</MenuItem>
-                                <MenuItem bg="#623BE2" _hover={{ bg:"#7B5BE7" }}>Restar Numeros</MenuItem>
-                                <MenuItem bg="#623BE2" _hover={{ bg:"#7B5BE7" }}>Otras App</MenuItem>
-                                <MenuItem bg="#623BE2" _hover={{ bg:"#7B5BE7" }}>Próximamente</MenuItem>
+                            <MenuButton as={Button} rightIcon={<FaChevronDown />} color="white" bg="#83c8f2" _hover={{  bg:"#83c8f2" }} _active={{ bg:"#83c8f2" }}>Categorias</MenuButton>
+                            <MenuList bg="#83c8f2">
+                                <MenuItem bg="#83c8f2" _hover={{ bg:"#7B5BE7" }}>Sumar Numeros</MenuItem>
+                                <MenuItem bg="#83c8f2" _hover={{ bg:"#7B5BE7" }}>Apilar Numeros</MenuItem>
+                                <MenuItem bg="#83c8f2" _hover={{ bg:"#7B5BE7" }}>Restar Numeros</MenuItem>
+                                <MenuItem bg="#83c8f2" _hover={{ bg:"#7B5BE7" }}>Mas App</MenuItem>
+                                <MenuItem bg="#83c8f2" _hover={{ bg:"#7B5BE7" }}>Próximamente</MenuItem>
                             </MenuList>
                         </Menu>
                     </Flex>
-                    <Box>
-                        <InputGroup>
-                            <InputLeftElement pointerEvents='none'  color='gray.300' >
-                                <FaSearch/>
-                            </InputLeftElement>
-                            <Input placeholder="Buscar" width={{base:"50px", sm:"100px",md:"250px", lg:"500px",     xl:"700px"}} _active={{borderColor:"white"}} _focus={{borderColor:"white"}}/>
-                        </InputGroup>
-                    </Box>
                     <Flex>
                         <IconButton  ml="2" isRound='true' icon={<FaUser/>} color="white" bg="#7B5BE7" _hover={{ bg:"#7B5BE7" }}></IconButton>
                         <IconButton  ml="8" isRound='true' icon={esOscuro ? <FaSun /> : <FaMoon />} onClick={toggleColorMode} color="white" bg="#7B5BE7" _hover={{ bg:"#7B5BE7" }}></IconButton>
@@ -39,34 +31,26 @@ const Header = () => {
                 </Flex>
             </Box>
             <Box w="100%" display={{sm:"block", md:"none"}} position="fixed" zIndex="99">
-                <Flex w="100%" alignItems="Center" justifyContent="space-between" bg="#623BE2" color="white" h="60px"   p={{base:"3", sm:"5"}}>
-                    <Button  as={IconButton} icon={<GiHamburgerMenu />} variant='outline'  color="white" bg="#623BE2" _hover={{ bg:"#623BE2" }} _active={{ bg:"#623BE2" }} onClick={onOpen} paddingInline={{base:"4px"}}>
+                <Flex w="100%" alignItems="Center" justifyContent="space-between" bg="#83c8f2" color="white" h="60px"   p={{base:"3", sm:"5"}}>
+                    <Button  as={IconButton} icon={<GiHamburgerMenu />} variant='outline'  color="white" bg="#83c8f2" _hover={{ bg:"#83c8f2" }} _active={{ bg:"#83c8f2" }} onClick={onOpen} paddingInline={{base:"4px"}}>
                         Menú
                     </Button>
                     <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
                         <DrawerOverlay />
                         <DrawerContent>
-                            <DrawerHeader borderBottomWidth='1px' bg="#623BE2">
-                                <InputGroup>
-                                    <InputLeftElement pointerEvents='none'  color='gray.300'>
-                                        <FaSearch/>
-                                    </InputLeftElement>
-                                    <Input placeholder="Buscar" width="700" color="white" _active={{borderColor:"white"}} _focus={{borderColor:"white"}}/>
-                                </InputGroup>
-                            </DrawerHeader>
                             <DrawerBody spacing="30px">
                                 <Stack spacing="2" pt="5px">
                                     <Menu>
                                         <MenuButton textAlign="left" _hover={{color:"#7B5BE7"}}>Sumar Numeros</MenuButton>
                                         <MenuButton textAlign="left" _hover={{color:"#7B5BE7"}}>Apilar Numeros</MenuButton>
                                         <MenuButton textAlign="left" _hover={{color:"#7B5BE7"}}>Restar Numeros</MenuButton>
-                                        <MenuButton textAlign="left" _hover={{color:"#7B5BE7"}}>Otras App</MenuButton>
+                                        <MenuButton textAlign="left" _hover={{color:"#7B5BE7"}}>Mas App</MenuButton>
                                         <MenuButton textAlign="left" _hover={{color:"#7B5BE7"}}>Próximamente</MenuButton>
                                     </Menu>
                                 </Stack>
                             </DrawerBody>
                             <DrawerFooter>
-                                <Button  as={IconButton} aria-label='Options' icon= {<ImCross />} variant='outline'  color="white"   bg="#623BE2" _hover={{ bg:"#623BE2" }} _active={{ bg:"#623BE2" }} onClick={onClose}>
+                                <Button  as={IconButton} aria-label='Options' icon= {<ImCross />} variant='outline'  color="white"   bg="#83c8f2" _hover={{ bg:"#83c8f2" }} _active={{ bg:"#83c8f2" }} onClick={onClose}>
                                     Cerrar
                                 </Button>
                             </DrawerFooter>
