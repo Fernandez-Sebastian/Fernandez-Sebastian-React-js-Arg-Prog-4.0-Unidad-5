@@ -1,4 +1,4 @@
-import { Divider, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react';
+import { Divider, Flex, Heading, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 
 const Footer = () => {
