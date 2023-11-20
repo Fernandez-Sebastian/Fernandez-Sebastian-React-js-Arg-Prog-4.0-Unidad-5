@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import { ChakraProvider, Box } from '@chakra-ui/react'
 import { ContadorResponsive } from './Components/ContadorResponsive/ContadorResponsive';
 import {Header} from './Components/Header/Header';
