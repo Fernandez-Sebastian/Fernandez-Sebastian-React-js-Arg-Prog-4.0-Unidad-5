@@ -9,11 +9,12 @@ import {
 
 function ContadorResponsive() {
     const [contador, setContador] = useState(0)
-    
-
 
     function incrementar() {
         setContador(contador+1)
+        if (contador > 10 && contador < 30){
+            
+        }
     }
 
     function decrementar() {
@@ -28,7 +29,7 @@ function ContadorResponsive() {
     <>
         <ChakraProvider>
             <Box paddingTop="20px"> 
-                <Text as='h1' textAlign="center" fontFamily="cursive"> Contador: {contador}</Text>
+                <Text as='h1' id='contar' textAlign="center" fontFamily="cursive"> Contador: {contador}</Text>
                 <Box textAlign="center">
                     <Button 
                     colorScheme='cyan'
