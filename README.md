@@ -1,5 +1,6 @@
 # Argentina Programa 4.0 - React JS - Clase 5
-## Objetivo:
+
+## Ejercicio:
 Integrar Chakra UI con useState en React para desarrollar un contador interactivo con diseño responsive.
 
 ## Instrucciones:
