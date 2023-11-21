@@ -28,7 +28,7 @@ function ContadorResponsive() {
   return (
     <>
         <ChakraProvider>
-            <Box pt="20px"> 
+            <Box pt="30px"> 
                 <Text as='h1' id='contar' textAlign="center" fontFamily="cursive"> Contador: {contador}</Text>
                 <Box textAlign="center">
                     <Button 

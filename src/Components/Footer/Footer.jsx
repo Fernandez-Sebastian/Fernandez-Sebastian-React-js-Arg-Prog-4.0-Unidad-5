@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
     return(
-        <VStack bg="#7c7c7c" h="auto" w="100%" color="#F4F4F4" mt="180px">
+        <VStack bg="#7c7c7c" h="auto" w="100%" color="#F4F4F4" mt="50px" position="fixed" bottom="0">
             <Flex bg="#303B52" h="5px" w="100%"></Flex>
             <Flex h="auto" w="100%" direction={{base:"column",sm:"column", md:"row"}} pl={{sm:"5%", md:"0"}} paddingBlock="10px" justifyContent={{sm:"flex-start", md:"space-around"}} alignItems="center">
                 <Flex flexDirection="column" width={{base:"90%", sm:"90%", md:"20%"}} mb={{base:"20px", sm:"20px", md:"0px"}} alignItems={{base:"center", sm:"center", md:"flex-start"}}>

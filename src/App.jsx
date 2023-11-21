@@ -11,12 +11,12 @@ function App() {
   return (
     <>
      <ChakraProvider>
-        <Box>
+      <Box>
           <Header/> 
-          <Cuerpo/>        
+          <Cuerpo/>  
           <ContadorResponsive/>
-            <Footer/>
-        </Box>
+          <Footer/>
+      </Box>
       </ChakraProvider>
     </> 
   )
