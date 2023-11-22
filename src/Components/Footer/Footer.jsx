@@ -12,10 +12,10 @@ const Footer = () => {
                         Donde Encontrarnos
                     </Heading>
                     <Flex direction="row" justifyContent="space-between" w="200px">
-                        <Text fontSize='md' cursor="pointer" _hover={{ color:"#325158" }}><FaLinkedinIn/></Text>
-                        <Text fontSize='md' cursor="pointer" _hover={{ color:"#325158" }}><FaWikipediaW/> </Text>
-                        <Text fontSize='md' cursor="pointer" _hover={{ color:"#325158" }}><FaInstagram/> </Text>
-                        <Text fontSize='md' cursor="pointer" _hover={{ color:"#325158" }}><FaSquareXTwitter/> </Text>
+                        <Text fontSize='md' cursor="pointer" _hover={{ color:"#92cace" }}><FaLinkedinIn/></Text>
+                        <Text fontSize='md' cursor="pointer" _hover={{ color:"#92cace" }}><FaWikipediaW/> </Text>
+                        <Text fontSize='md' cursor="pointer" _hover={{ color:"#92cace" }}><FaInstagram/> </Text>
+                        <Text fontSize='md' cursor="pointer" _hover={{ color:"#92cace" }}><FaSquareXTwitter/> </Text>
                     </Flex>
                 </Flex>
             </Flex>
