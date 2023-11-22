@@ -32,7 +32,7 @@ function ContadorResponsive() {
                 <Text as='h1' id='contar' textAlign="center" fontFamily="cursive"> Contador: {contador}</Text>
                 <Box textAlign="center">
                     <Button 
-                    colorScheme='cyan'
+                    bg='#438e96' color="white"_hover={{bg:"#356169"}}
                     onClick={decrementar}isDisabled={
                         contador==(-15)?"isDisabled":""
                     }
@@ -40,7 +40,7 @@ function ContadorResponsive() {
                     >Decrementar
                     </Button>
                     <Button 
-                    colorScheme='red'
+                    bg='#438e96'color="white" _hover={{bg:"#356169"}}
                     onClick={resetear}isDisabled={
                         contador==(0)?"isDisabled":""
                     }
@@ -48,7 +48,7 @@ function ContadorResponsive() {
                     >Resetear
                     </Button>
                     <Button 
-                    colorScheme='whatsapp' 
+                    bg='#438e96' color="white" _hover={{bg:"#356169"}}
                     onClick={incrementar} isDisabled={contador==15?"isDisabled":""} 
                     m="5px"
                     >Incrementar
