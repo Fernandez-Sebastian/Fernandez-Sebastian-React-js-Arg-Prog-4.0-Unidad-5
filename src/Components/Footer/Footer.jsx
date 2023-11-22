@@ -1,19 +1,22 @@
 import { Divider, Flex, Heading, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
+import {FaLinkedinIn, FaSquareXTwitter, FaWikipediaW, FaInstagram} from 'react-icons/fa6';
 
 const Footer = () => {
     return(
         <VStack bg="#7c7c7c" h="auto" w="100%" color="#F4F4F4" mt="50px" position="fixed" bottom="0">
-            <Flex bg="#303B52" h="5px" w="100%"></Flex>
+            <Flex bg="#325158" h="5px" w="100%"></Flex>
             <Flex h="auto" w="100%" direction={{base:"column",sm:"column", md:"row"}} pl={{sm:"5%", md:"0"}} paddingBlock="10px" justifyContent={{sm:"flex-start", md:"space-around"}} alignItems="center">
-                <Flex flexDirection="column" width={{base:"90%", sm:"90%", md:"20%"}} mb={{base:"20px", sm:"20px", md:"0px"}} alignItems={{base:"center", sm:"center", md:"flex-start"}}>
+                <Flex flexDirection="column" width={{base:"90%", sm:"90%", md:"20%"}} mb={{base:"20px", sm:"20px", md:"0px"}} alignItems="center">
                     <Heading as='h4' mb="15px" size='md'>
                         Donde Encontrarnos
                     </Heading>
-                    <Text fontSize='md' cursor="pointer" _hover={{ color:"#9C64FF" }}>Twitter</Text>
-                    <Text fontSize='md' cursor="pointer" _hover={{ color:"#9C64FF" }}>Facebook </Text>
-                    <Text fontSize='md' cursor="pointer" _hover={{ color:"#9C64FF" }}>Instagram </Text>
-                    <Text fontSize='md' cursor="pointer" _hover={{ color:"#9C64FF" }}>Youtube </Text>
+                    <Flex direction="row" justifyContent="space-between" w="200px">
+                        <Text fontSize='md' cursor="pointer" _hover={{ color:"#325158" }}><FaLinkedinIn/></Text>
+                        <Text fontSize='md' cursor="pointer" _hover={{ color:"#325158" }}><FaWikipediaW/> </Text>
+                        <Text fontSize='md' cursor="pointer" _hover={{ color:"#325158" }}><FaInstagram/> </Text>
+                        <Text fontSize='md' cursor="pointer" _hover={{ color:"#325158" }}><FaSquareXTwitter/> </Text>
+                    </Flex>
                 </Flex>
             </Flex>
             <Divider/>
